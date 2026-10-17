@@ -25,9 +25,7 @@ QUESTIONS = [
     "and which parts do I need?",
     "What are the discharge temperature limits on CMP-03, and what should I check first "
     "when it runs hot?",
-    "Do we have spindle bearing sets in stock for CNC-07?",
     "When was the air/oil separator element last replaced on CMP-01?",
-    "What lockout steps do I follow before opening the cooler on CMP-03?",
     "What is the warranty period for the spindle on CNC-06?",
 ]
 

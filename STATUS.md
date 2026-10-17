@@ -8,3 +8,5 @@
 - Done: upstream proof: 422 upstream unit tests passed (docs/upstream_tests.txt); upstream alarm example SUCCESS (docs/upstream_alarm_example.txt). Wheel == tag source.
 - Done: build_cmms (docs/data_load_report.txt), Corvane workflow demo (docs/alarm_demo.txt), eval: Corvane 17/20 FM, 20/20 priority, 18/20 parts vs upstream built-in 14/20, 6/20, 4/20 (docs/eval_results.md).
 - Next: Q&A run (docs/qa_*), pytest suite, README/NOTICE/.env.example/pyproject, git commit.
+- Done: 28 own tests pass; first commit 770bf0a. 7B Q&A attempt: index built (30 chunks, 80 s) but Q1 did not finish within 900 s (CPU Ollama shared with other builds).
+- Running: Q&A with qwen2.5:3b, 4 questions. Next: README, STATUS final, commit.

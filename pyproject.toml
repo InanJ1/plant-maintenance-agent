@@ -23,3 +23,10 @@ pythonpath = ["."]
 asyncio_mode = "auto"
 addopts = "-q -p no:cacheprovider"
 filterwarnings = ["ignore::DeprecationWarning"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["corvane_pm"]
