@@ -1,8 +1,0 @@
-machina-ai[docs-rag-hybrid,examples,excel,litellm]==0.4.0
-langchain-community==0.4.2
-langchain-chroma==1.1.0
-chromadb==1.5.9
-
-[dev]
-pytest==9.1.1
-pytest-asyncio==1.4.0
