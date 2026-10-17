@@ -1,0 +1,21 @@
+# Corvane work-order priority policy (synthetic, agreed with the maintenance planners).
+# 1. Base priority from asset criticality and effective alarm severity.
+#    Effective severity is "critical" when the alarm says so, or when the value is
+#    past the parameter's trip limit (config/alarm_parameters.yaml).
+# 2. Repeat failure: the same failure mode was closed on the same asset within
+#    `repeat_window_days` before the alarm -> raise one level.
+# 3. Never above "emergency". Parts shortfalls do not change priority; they are
+#    flagged on the draft for the planner.
+
+base:
+  A: {critical: emergency, warning: high}
+  B: {critical: high, warning: medium}
+  C: {critical: medium, warning: low}
+
+repeat_window_days: 90
+
+# Lowest to highest; used for "raise one level".
+levels: [low, medium, high, emergency]
+
+# Long lead time that makes a parts shortfall worth flagging as a hold.
+parts_hold_lead_time_days: 14

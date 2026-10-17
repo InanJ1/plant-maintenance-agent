@@ -1,0 +1,21 @@
+Corvane data load report
+
+Records written:
+  assets: 29
+  work_orders: 220
+  spare_parts (sku x storeroom): 32
+  failure_modes: 18
+
+Fixes applied:
+  MXN unit costs converted to USD: 16
+  asset criticality blank, defaulted: 1
+  asset make whitespace trimmed: 3
+  corrective work orders without failure code (kept): 3
+  duplicate work-order rows dropped: 3
+  labor hours blank (kept as unknown): 9
+  site-format dates converted to ISO: 122
+  supplier name variants canonicalized: 10
+  work-order equipment ID normalized: 25
+
+Warnings:
+  TST-03: criticality blank in CMMS export, used B; confirm with planner

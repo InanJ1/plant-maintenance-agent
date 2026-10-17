@@ -1,0 +1,112 @@
+# Corvane repair kits (synthetic): which spare parts, skills and labor hours a
+# corrective job needs, per failure mode and machine model. Upstream machina has
+# no failure-mode-to-parts link, so this file is the Corvane-specific mapping.
+# `parts: []` means the fix needs no stocked part (cleaning, balancing, adjusting).
+
+CNC-SPBRG-WEAR:
+  skills: [spindle_rebuild, mechanical]
+  hours: 10
+  parts:
+    VX-640: [{sku: SP-BRG-0114, qty: 1}, {sku: SP-SEAL-0207, qty: 1}]
+    HX-500: [{sku: SP-BRG-0116, qty: 1}, {sku: SP-SEAL-0207, qty: 1}]
+
+CNC-SPIMB:
+  skills: [machinist, mechanical]
+  hours: 1.5
+  parts: {}
+
+CNC-SPLUB:
+  skills: [mechanical, lubrication]
+  hours: 2
+  parts:
+    VX-640: [{sku: SP-LUB-0402, qty: 1}, {sku: SP-FLT-0405, qty: 1}]
+    HX-500: [{sku: SP-LUB-0402, qty: 1}, {sku: SP-FLT-0405, qty: 1}]
+
+CNC-DBAR:
+  skills: [spindle_rebuild, mechanical]
+  hours: 4
+  parts:
+    VX-640: [{sku: SP-SPRG-0031, qty: 1}]
+    HX-500: [{sku: SP-SPRG-0031, qty: 1}]
+
+CNC-COOL:
+  skills: [mechanical]
+  hours: 1
+  parts:
+    VX-640: [{sku: SP-FLT-0310, qty: 2}]
+    HX-500: [{sku: SP-FLT-0310, qty: 2}]
+
+CNC-SPMOT:
+  skills: [electrical]
+  hours: 2
+  parts:
+    VX-640: [{sku: SP-FAN-0044, qty: 1}]
+    HX-500: [{sku: SP-FAN-0044, qty: 1}]
+
+CMP-COOLER-FOUL:
+  skills: [mechanical]
+  hours: 2
+  parts: {}
+
+CMP-TVALVE:
+  skills: [mechanical]
+  hours: 2
+  parts:
+    RS-75: [{sku: SP-VLV-0520, qty: 1}]
+
+CMP-SEP-SAT:
+  skills: [mechanical]
+  hours: 3
+  parts:
+    RS-75: [{sku: SP-SEP-0503, qty: 1}]
+
+CMP-INFLT-CLOG:
+  skills: [mechanical]
+  hours: 0.5
+  parts:
+    RS-75: [{sku: SP-FLT-0501, qty: 1}]
+
+CMP-OILFLT:
+  skills: [mechanical]
+  hours: 0.5
+  parts:
+    RS-75: [{sku: SP-FLT-0502, qty: 1}]
+
+CMP-MOTBRG:
+  skills: [mechanical, electrical]
+  hours: 8
+  parts:
+    RS-75: [{sku: SP-BRG-0230, qty: 1}]
+
+CMP-SHAFTSEAL:
+  skills: [mechanical]
+  hours: 6
+  parts:
+    RS-75: [{sku: SP-SEAL-0042, qty: 1}, {sku: SP-OIL-0550, qty: 1}]
+
+CMP-AIRLEAK:
+  skills: [mechanical]
+  hours: 4
+  parts: {}
+
+CNV-ROLLER:
+  skills: [mechanical]
+  hours: 3
+  parts:
+    RC-1200: [{sku: SP-BRG-0301, qty: 2}]
+
+CNV-MISTRACK:
+  skills: [mechanical]
+  hours: 1
+  parts: {}
+
+TST-SEAL:
+  skills: [mechanical]
+  hours: 3
+  parts:
+    PTS-2: [{sku: SP-SEAL-0350, qty: 1}]
+
+TST-FLOWMETER:
+  skills: [instrumentation]
+  hours: 2
+  parts: {}

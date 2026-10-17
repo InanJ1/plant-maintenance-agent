@@ -1,0 +1,65 @@
+# How Corvane's CMMS and ERP exports map onto machina's domain model.
+# Used by corvane_pm/data_loader.py.
+
+# CMMS status codes -> machina WorkOrderStatus
+status:
+  WAPPR: created
+  APPR: assigned
+  INPRG: in_progress
+  COMP: completed
+  CLOSE: closed
+  CAN: cancelled
+
+# CMMS numeric priority -> machina Priority
+priority:
+  "1": emergency
+  "2": high
+  "3": medium
+  "4": low
+
+# CMMS work type -> machina WorkOrderType
+work_type:
+  CM: corrective
+  PM: preventive
+  PDM: predictive
+
+# Date formats by site, tried after ISO yyyy-mm-dd.
+# IND1 exports US month-first dates; MTY1 exports day-first dates.
+site_date_format:
+  IND1: "%m/%d/%Y"
+  MTY1: "%d/%m/%Y"
+
+# CMMS equipment class -> machina AssetType and ISO 14224 class code (if any)
+asset_class:
+  SITE: {type: structural}
+  AREA: {type: structural}
+  CNC: {type: rotating_equipment}
+  COMPRESSOR: {type: rotating_equipment, iso_class: CO}
+  TESTSTAND: {type: instrument}
+  CONVEYOR: {type: rotating_equipment}
+  CASTING: {type: static_equipment}
+
+# Supplier name variants seen in the ERP export -> canonical name
+vendor_aliases:
+  brightline bearings: Brightline Bearings
+  brightline bearing co: Brightline Bearings
+  brightline brgs: Brightline Bearings
+  pellum seal co.: Pellum Seal Co.
+  pellum seal co: Pellum Seal Co.
+  pellum seals: Pellum Seal Co.
+  keystone mro supply: Keystone MRO Supply
+  keystone mro: Keystone MRO Supply
+  ostrava motor works: Ostrava Motor Works
+  tolland air systems: Tolland Air Systems
+  varnell machine works: Varnell Machine Works
+
+# Criticality to use when the CMMS export leaves it blank (flagged in the load report).
+default_criticality: B
+
+# Fixed planning rate for MXN unit costs in the MTY1 storeroom (assumption, not a market rate).
+mxn_per_usd: 18.0
+
+# Storeroom -> site
+storeroom_site:
+  IND1-STORES: IND1
+  MTY1-STORES: MTY1

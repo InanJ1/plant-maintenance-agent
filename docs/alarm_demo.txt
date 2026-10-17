@@ -1,0 +1,120 @@
+# command: PYTHONUTF8=1 .venv/Scripts/python.exe scripts/run_alarm_demo.py --alarms ALM-2610-001 ALM-2610-003 ALM-2610-009 ALM-2610-012 ALM-2610-016
+# planner answers are scripted (pre-set), shown as 'scripted' below
+Workflow: Corvane Alarm to Work Order (10 steps) | mode: SANDBOX | approvals: scripted [True, False, True, True, False]
+
+==============================================================================
+ALM-2610-001  CNC-04  spindle_vib_overall_mm_s=7.9 (limit 4.5, warning)  related={'spindle_bearing_temp_c': 68}
+result: SUCCESS in 6 ms
+  [+] diagnose           ok
+  [+] check_history      ok
+  [+] check_spare_parts  ok
+  [+] plan_parts         ok
+  [+] assess_priority    ok
+  [+] draft_work_order   ok
+  [+] complete_draft     ok
+  [+] request_approval   ok
+  [+] submit_work_order  ok
+  [+] notify_technician  ok
+Draft WO-AUTO-ABDAC269 for CNC-04  [corrective, priority high]
+  Alarm:          ALM-2610-001  spindle_vib_overall_mm_s=7.9 (limit 4.5)
+  Failure mode:   CNC-SPBRG-WEAR
+  Diagnosis:      CNC-SPBRG-WEAR (high), CNC-SPIMB (high), CNC-SPLUB (high)
+  Priority why:   criticality B + critical -> high; spindle_vib_overall_mm_s=7.9 is past the trip limit
+  Parts:          SP-BRG-0114 x1, SP-SEAL-0207 x1
+  Skills / hours: spindle_rebuild, mechanical / 10
+  Approval:       approved=True by 'scripted-planner' (scripted: pre-set answer)
+  CMMS submit:    sandbox: intercepted, not written
+
+==============================================================================
+ALM-2610-003  CNC-07  spindle_vib_env_g=3.1 (limit 1.5, critical)  related={}
+result: SUCCESS in 3 ms
+  [+] diagnose           ok
+  [+] check_history      ok
+  [+] check_spare_parts  ok
+  [+] plan_parts         ok
+  [+] assess_priority    ok
+  [+] draft_work_order   ok
+  [+] complete_draft     ok
+  [+] request_approval   ok
+  [~] submit_work_order  skipped
+  [~] notify_technician  skipped
+Draft WO-AUTO-50DD5C75 for CNC-07  [corrective, priority high]
+  Alarm:          ALM-2610-003  spindle_vib_env_g=3.1 (limit 1.5)
+  Failure mode:   CNC-SPBRG-WEAR
+  Diagnosis:      CNC-SPBRG-WEAR (medium)
+  Priority why:   criticality B + critical -> high
+  Parts:          SP-BRG-0116 x1, SP-SEAL-0207 x1
+  Skills / hours: spindle_rebuild, mechanical / 10
+  Shortfalls:     SP-BRG-0116 short 1 (lead 35 d) (PARTS HOLD)
+  Approval:       approved=False by 'scripted-planner' (scripted: pre-set answer)
+  CMMS submit:    skipped (not approved)
+
+==============================================================================
+ALM-2610-009  CMP-03  discharge_temp_c=108 (limit 105, warning)  related={'cooler_approach_temp_c': 19}
+result: SUCCESS in 4 ms
+  [+] diagnose           ok
+  [+] check_history      ok
+  [+] check_spare_parts  ok
+  [+] plan_parts         ok
+  [+] assess_priority    ok
+  [+] draft_work_order   ok
+  [+] complete_draft     ok
+  [+] request_approval   ok
+  [+] submit_work_order  ok
+  [+] notify_technician  ok
+Draft WO-AUTO-B84C2243 for CMP-03  [corrective, priority high]
+  Alarm:          ALM-2610-009  discharge_temp_c=108 (limit 105)
+  Failure mode:   CMP-COOLER-FOUL
+  Diagnosis:      CMP-COOLER-FOUL (high), CMP-TVALVE (high)
+  Priority why:   criticality A + warning -> high
+  Parts:          none
+  Skills / hours: mechanical / 2
+  Approval:       approved=True by 'scripted-planner' (scripted: pre-set answer)
+  CMMS submit:    sandbox: intercepted, not written
+
+==============================================================================
+ALM-2610-012  CMP-03  separator_dp_bar=1.1 (limit 0.8, warning)  related={'oil_carryover_ppm': 9}
+result: SUCCESS in 5 ms
+  [+] diagnose           ok
+  [+] check_history      ok
+  [+] check_spare_parts  ok
+  [+] plan_parts         ok
+  [+] assess_priority    ok
+  [+] draft_work_order   ok
+  [+] complete_draft     ok
+  [+] request_approval   ok
+  [+] submit_work_order  ok
+  [+] notify_technician  ok
+Draft WO-AUTO-A5BDEBA1 for CMP-03  [corrective, priority emergency]
+  Alarm:          ALM-2610-012  separator_dp_bar=1.1 (limit 0.8)
+  Failure mode:   CMP-SEP-SAT
+  Diagnosis:      CMP-SEP-SAT (high)
+  Priority why:   criticality A + warning -> high; repeat of MTY1-260209 within 90 days -> emergency
+  Parts:          SP-SEP-0503 x1
+  Skills / hours: mechanical / 3
+  Shortfalls:     SP-SEP-0503 short 1 (lead 28 d) (PARTS HOLD)
+  Approval:       approved=True by 'scripted-planner' (scripted: pre-set answer)
+  CMMS submit:    sandbox: intercepted, not written
+
+==============================================================================
+ALM-2610-016  CMP-01  discharge_temp_c=131 (limit 105, critical)  related={'oil_injection_temp_c': 76, 'cooler_approach_temp_c': 7}
+result: SUCCESS in 5 ms
+  [+] diagnose           ok
+  [+] check_history      ok
+  [+] check_spare_parts  ok
+  [+] plan_parts         ok
+  [+] assess_priority    ok
+  [+] draft_work_order   ok
+  [+] complete_draft     ok
+  [+] request_approval   ok
+  [~] submit_work_order  skipped
+  [~] notify_technician  skipped
+Draft WO-AUTO-2745561E for CMP-01  [corrective, priority high]
+  Alarm:          ALM-2610-016  discharge_temp_c=131 (limit 105)
+  Failure mode:   CMP-COOLER-FOUL
+  Diagnosis:      CMP-COOLER-FOUL (high), CMP-TVALVE (high)
+  Priority why:   criticality B + critical -> high
+  Parts:          none
+  Skills / hours: mechanical / 2
+  Approval:       approved=False by 'scripted-planner' (scripted: pre-set answer)
+  CMMS submit:    skipped (not approved)

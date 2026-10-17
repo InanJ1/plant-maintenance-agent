@@ -1,0 +1,231 @@
+# Corvane evaluation set: 20 synthetic condition-monitoring alarms.
+# expected.* is what the planner and technician agreed the job turned out to be
+# (the "true" cause). Priorities follow config/priority_policy.yaml.
+# expected.parts lists stocked SKUs the job needs ([] = none).
+# Some cases are hard on purpose: one signal that fits two causes, a cause
+# outside the catalog, a failed sensor, an asset with no catalog entries.
+
+- alarm_id: ALM-2610-001
+  asset_id: CNC-04
+  parameter: spindle_vib_overall_mm_s
+  value: 7.9
+  threshold: 4.5
+  severity: warning
+  timestamp: "2026-10-05T06:40:00+00:00"
+  related_readings: {spindle_bearing_temp_c: 68}
+  expected: {failure_mode: CNC-SPBRG-WEAR, priority: high,
+             parts: [[SP-BRG-0114, 1], [SP-SEAL-0207, 1]]}
+  why: Vibration plus hot bearing on a VX-640. Vibration past trip makes it critical; B + critical = high.
+
+- alarm_id: ALM-2610-002
+  asset_id: CNC-02
+  parameter: spindle_vib_overall_mm_s
+  value: 5.2
+  threshold: 4.5
+  severity: warning
+  timestamp: "2026-10-05T09:15:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: CNC-SPIMB, priority: high, parts: []}
+  why: Vibration only, bearing temperature normal. Technician swapped the toolholder and it cleared.
+
+- alarm_id: ALM-2610-003
+  asset_id: CNC-07
+  parameter: spindle_vib_env_g
+  value: 3.1
+  threshold: 1.5
+  severity: critical
+  timestamp: "2026-10-06T02:10:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: CNC-SPBRG-WEAR, priority: high,
+             parts: [[SP-BRG-0116, 1], [SP-SEAL-0207, 1]]}
+  why: Bearing-band envelope on an HX-500 is specific to bearing damage. MTY1 has no HX-500 bearing set in stock.
+
+- alarm_id: ALM-2610-004
+  asset_id: CNC-01
+  parameter: spindle_bearing_temp_c
+  value: 64
+  threshold: 55
+  severity: warning
+  timestamp: "2026-10-06T11:30:00+00:00"
+  related_readings: {spindle_lube_pressure_bar: 1.1}
+  expected: {failure_mode: CNC-SPLUB, priority: high,
+             parts: [[SP-FLT-0405, 1], [SP-LUB-0402, 1]]}
+  why: Hot bearing with low lube pressure is lube starvation. A + warning = high.
+
+- alarm_id: ALM-2610-005
+  asset_id: CNC-05
+  parameter: spindle_bearing_temp_c
+  value: 58
+  threshold: 55
+  severity: warning
+  timestamp: "2026-10-07T07:05:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: CNC-SPLUB, priority: medium,
+             parts: [[SP-FLT-0405, 1], [SP-LUB-0402, 1]]}
+  why: Hot bearing alone. The cause was a clogged lube line filter; the lube pressure sensor on CNC-05 is not wired to the monitoring system.
+
+- alarm_id: ALM-2610-006
+  asset_id: CNC-03
+  parameter: drawbar_clamp_force_kn
+  value: 14.0
+  threshold: 18
+  severity: warning
+  timestamp: "2026-10-07T13:50:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: CNC-DBAR, priority: emergency, parts: [[SP-SPRG-0031, 1]]}
+  why: 14 kN is below the 15 kN trip limit (tool pull-out risk), so critical; A + critical = emergency.
+
+- alarm_id: ALM-2610-007
+  asset_id: CNC-08
+  parameter: coolant_filter_dp_bar
+  value: 1.8
+  threshold: 1.2
+  severity: warning
+  timestamp: "2026-10-08T04:20:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: CNC-COOL, priority: medium, parts: [[SP-FLT-0310, 2]]}
+  why: Filter dP high, below trip. B + warning = medium.
+
+- alarm_id: ALM-2610-008
+  asset_id: CNC-06
+  parameter: spindle_motor_temp_c
+  value: 118
+  threshold: 100
+  severity: critical
+  timestamp: "2026-10-08T16:45:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: CNC-SPMOT, priority: emergency, parts: [[SP-FAN-0044, 1]]}
+  why: Motor overtemperature past trip on the only HMC for GB-40 housings. A + critical = emergency. Fan not in MTY1 stock.
+
+- alarm_id: ALM-2610-009
+  asset_id: CMP-03
+  parameter: discharge_temp_c
+  value: 108
+  threshold: 105
+  severity: warning
+  timestamp: "2026-10-09T15:30:00+00:00"
+  related_readings: {cooler_approach_temp_c: 19}
+  expected: {failure_mode: CMP-COOLER-FOUL, priority: high, parts: []}
+  why: High discharge temperature with high cooler approach temperature. Cooler cleaned, no parts. A + warning = high.
+
+- alarm_id: ALM-2610-010
+  asset_id: CMP-01
+  parameter: discharge_temp_c
+  value: 107
+  threshold: 105
+  severity: warning
+  timestamp: "2026-10-09T10:00:00+00:00"
+  related_readings: {oil_injection_temp_c: 92, cooler_approach_temp_c: 8}
+  expected: {failure_mode: CMP-TVALVE, priority: medium, parts: [[SP-VLV-0520, 1]]}
+  why: Cooler approach normal, oil injection hot. Thermostatic valve stuck. B + warning = medium.
+
+- alarm_id: ALM-2610-011
+  asset_id: CMP-02
+  parameter: discharge_temp_c
+  value: 106
+  threshold: 105
+  severity: warning
+  timestamp: "2026-10-10T08:25:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: CMP-TVALVE, priority: medium, parts: [[SP-VLV-0520, 1]]}
+  why: Discharge temperature only (CMP-02 has no approach or injection temperature on the network). Turned out to be the thermostatic valve.
+
+- alarm_id: ALM-2610-012
+  asset_id: CMP-03
+  parameter: separator_dp_bar
+  value: 1.1
+  threshold: 0.8
+  severity: warning
+  timestamp: "2026-10-10T19:40:00+00:00"
+  related_readings: {oil_carryover_ppm: 9}
+  expected: {failure_mode: CMP-SEP-SAT, priority: emergency, parts: [[SP-SEP-0503, 1]]}
+  why: Separator saturated again, 59 days after the last separator job on CMP-03. A + warning = high, repeat failure raises to emergency. No separator in MTY1 stock.
+
+- alarm_id: ALM-2610-013
+  asset_id: CMP-01
+  parameter: inlet_filter_dp_mbar
+  value: 62
+  threshold: 50
+  severity: warning
+  timestamp: "2026-10-11T07:10:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: CMP-INFLT-CLOG, priority: medium, parts: [[SP-FLT-0501, 1]]}
+  why: Intake filter dP above warning, below trip. B + warning = medium.
+
+- alarm_id: ALM-2610-014
+  asset_id: CMP-02
+  parameter: motor_vib_mm_s
+  value: 8.4
+  threshold: 4.5
+  severity: critical
+  timestamp: "2026-10-11T22:05:00+00:00"
+  related_readings: {motor_bearing_temp_c: 88}
+  expected: {failure_mode: CMP-MOTBRG, priority: high, parts: [[SP-BRG-0230, 1]]}
+  why: Motor vibration past trip with hot motor bearing. B + critical = high.
+
+- alarm_id: ALM-2610-015
+  asset_id: CMP-03
+  parameter: oil_level_pct
+  value: 38
+  threshold: 50
+  severity: warning
+  timestamp: "2026-10-12T05:55:00+00:00"
+  related_readings: {oil_consumption_l_wk: 4.0}
+  expected: {failure_mode: CMP-SHAFTSEAL, priority: high,
+             parts: [[SP-OIL-0550, 1], [SP-SEAL-0042, 1]]}
+  why: Falling oil level and high consumption. Shaft seal kit plus a pail of fluid. A + warning = high.
+
+- alarm_id: ALM-2610-016
+  asset_id: CMP-01
+  parameter: discharge_temp_c
+  value: 131
+  threshold: 105
+  severity: critical
+  timestamp: "2026-10-12T14:20:00+00:00"
+  related_readings: {oil_injection_temp_c: 76, cooler_approach_temp_c: 7}
+  expected: {failure_mode: null, priority: high, parts: []}
+  why: Failed discharge RTD (reading jumped in seconds, other temperatures normal). Sensor faults are not in the catalog, so the right output is no failure mode; the RTD is not a stocked part. B + critical = high.
+
+- alarm_id: ALM-2610-017
+  asset_id: CNV-02
+  parameter: conveyor_vib_mm_s
+  value: 9.0
+  threshold: 6.0
+  severity: warning
+  timestamp: "2026-10-13T09:00:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: CNV-ROLLER, priority: low, parts: [[SP-BRG-0301, 2]]}
+  why: Tail-section vibration below trip. C + warning = low.
+
+- alarm_id: ALM-2610-018
+  asset_id: TST-01
+  parameter: loop_leak_rate_lph
+  value: 3.5
+  threshold: 2.0
+  severity: warning
+  timestamp: "2026-10-13T12:30:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: TST-SEAL, priority: medium, parts: [[SP-SEAL-0350, 1]]}
+  why: Seal leak below trip. B + warning = medium.
+
+- alarm_id: ALM-2610-019
+  asset_id: CST-01
+  parameter: pour_temp_deviation_c
+  value: 31
+  threshold: 25
+  severity: warning
+  timestamp: "2026-10-14T06:15:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: null, priority: high, parts: []}
+  why: The casting line has no failure modes in the catalog yet. The draft should carry no failure mode and no parts. A + warning = high.
+
+- alarm_id: ALM-2610-020
+  asset_id: CNC-05
+  parameter: coolant_pressure_bar
+  value: 2.4
+  threshold: 3.0
+  severity: warning
+  timestamp: "2026-10-14T10:45:00+00:00"
+  related_readings: {}
+  expected: {failure_mode: CNC-COOL, priority: high, parts: [[SP-FLT-0310, 2]]}
+  why: Low coolant pressure 47 days after the last coolant filter job on CNC-05. B + warning = medium, repeat raises to high.

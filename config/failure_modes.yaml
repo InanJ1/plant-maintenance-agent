@@ -1,0 +1,206 @@
+# Corvane reliability catalog (synthetic). One entry per failure mode.
+# Fields map 1:1 onto machina's FailureMode model, plus `applies_to_models`,
+# which the data loader uses to fill Asset.failure_modes for each asset.
+# `typical_indicators` are the parameter names Corvane's condition-monitoring
+# system puts on alarms (see config/alarm_parameters.yaml).
+# ISO 14224 Table B.15 codes: VIB vibration, OHE overheating, PLU plugged,
+# PDE parameter deviation, ELU external leakage (utility medium), ELP external
+# leakage (process medium), LOO low output, AIR abnormal instrument reading.
+
+- code: CNC-SPBRG-WEAR
+  name: Spindle bearing wear
+  iso_14224_code: VIB
+  mechanism: wear
+  category: mechanical
+  applies_to_models: [VX-640, HX-500]
+  detection_methods: [vibration_analysis, temperature_monitoring]
+  typical_indicators: [spindle_vib_overall_mm_s, spindle_vib_env_g, spindle_bearing_temp_c]
+  recommended_actions: [replace_spindle_bearing_set, replace_labyrinth_seal, run_in_spindle]
+  mtbf_hours: 18000
+
+- code: CNC-SPIMB
+  name: Spindle or toolholder imbalance
+  iso_14224_code: VIB
+  mechanism: imbalance
+  category: mechanical
+  applies_to_models: [VX-640, HX-500]
+  detection_methods: [vibration_analysis]
+  typical_indicators: [spindle_vib_overall_mm_s, spindle_vib_1x_mm_s]
+  recommended_actions: [clean_spindle_taper, balance_or_replace_toolholder]
+  mtbf_hours: 6000
+
+- code: CNC-SPLUB
+  name: Spindle lubrication starvation
+  iso_14224_code: OHE
+  mechanism: lubrication_failure
+  category: mechanical
+  applies_to_models: [VX-640, HX-500]
+  detection_methods: [temperature_monitoring, pressure_monitoring]
+  typical_indicators: [spindle_bearing_temp_c, spindle_lube_pressure_bar]
+  recommended_actions: [replace_lube_cartridge, replace_lube_line_filter, bleed_oil_air_lines]
+  mtbf_hours: 12000
+
+- code: CNC-DBAR
+  name: Drawbar clamping force low
+  iso_14224_code: PDE
+  mechanism: fatigue
+  category: mechanical
+  applies_to_models: [VX-640, HX-500]
+  detection_methods: [clamp_force_gauge]
+  typical_indicators: [drawbar_clamp_force_kn, tool_unclamp_time_s]
+  recommended_actions: [replace_disc_spring_stack, verify_clamp_force]
+  mtbf_hours: 20000
+
+- code: CNC-COOL
+  name: Coolant system clogged
+  iso_14224_code: PLU
+  mechanism: blockage
+  category: process
+  applies_to_models: [VX-640, HX-500]
+  detection_methods: [pressure_monitoring]
+  typical_indicators: [coolant_pressure_bar, coolant_filter_dp_bar]
+  recommended_actions: [replace_coolant_filter_cartridges, flush_coolant_tank]
+  mtbf_hours: 4000
+
+- code: CNC-SPMOT
+  name: Spindle motor overheating (cooling fan failed)
+  iso_14224_code: OHE
+  mechanism: overheating
+  category: electrical
+  applies_to_models: [VX-640, HX-500]
+  detection_methods: [temperature_monitoring, current_monitoring]
+  typical_indicators: [spindle_motor_temp_c, spindle_motor_current_a]
+  recommended_actions: [replace_motor_cooling_fan, clean_motor_fins]
+  mtbf_hours: 25000
+
+- code: CMP-COOLER-FOUL
+  name: Oil/air cooler fouled
+  iso_14224_code: OHE
+  mechanism: fouling
+  category: process
+  applies_to_models: [RS-75]
+  detection_methods: [temperature_monitoring]
+  typical_indicators: [discharge_temp_c, cooler_approach_temp_c]
+  recommended_actions: [clean_cooler_fins, check_cooling_fan]
+  mtbf_hours: 5000
+
+- code: CMP-TVALVE
+  name: Thermostatic valve stuck
+  iso_14224_code: OHE
+  mechanism: mechanical_failure
+  category: mechanical
+  applies_to_models: [RS-75]
+  detection_methods: [temperature_monitoring]
+  typical_indicators: [discharge_temp_c, oil_injection_temp_c]
+  recommended_actions: [replace_thermostatic_valve_element]
+  mtbf_hours: 16000
+
+- code: CMP-SEP-SAT
+  name: Air/oil separator saturated
+  iso_14224_code: PDE
+  mechanism: clogging
+  category: process
+  applies_to_models: [RS-75]
+  detection_methods: [differential_pressure, oil_carryover_test]
+  typical_indicators: [separator_dp_bar, oil_carryover_ppm]
+  recommended_actions: [replace_separator_element, check_scavenge_line]
+  mtbf_hours: 8000
+
+- code: CMP-INFLT-CLOG
+  name: Intake filter clogged
+  iso_14224_code: PLU
+  mechanism: clogging
+  category: process
+  applies_to_models: [RS-75]
+  detection_methods: [differential_pressure]
+  typical_indicators: [inlet_filter_dp_mbar, delivery_flow_m3_min]
+  recommended_actions: [replace_intake_filter_element]
+  mtbf_hours: 3000
+
+- code: CMP-OILFLT
+  name: Oil filter clogged
+  iso_14224_code: PLU
+  mechanism: clogging
+  category: process
+  applies_to_models: [RS-75]
+  detection_methods: [differential_pressure]
+  typical_indicators: [oil_filter_dp_bar]
+  recommended_actions: [replace_oil_filter_element]
+  mtbf_hours: 4000
+
+- code: CMP-MOTBRG
+  name: Drive motor bearing defect
+  iso_14224_code: VIB
+  mechanism: wear
+  category: mechanical
+  applies_to_models: [RS-75]
+  detection_methods: [vibration_analysis, temperature_monitoring]
+  typical_indicators: [motor_vib_mm_s, motor_bearing_temp_c]
+  recommended_actions: [replace_motor_bearings, check_coupling_alignment]
+  mtbf_hours: 30000
+
+- code: CMP-SHAFTSEAL
+  name: Airend shaft seal leaking oil
+  iso_14224_code: ELU
+  mechanism: wear
+  category: mechanical
+  applies_to_models: [RS-75]
+  detection_methods: [visual_inspection, oil_level_monitoring]
+  typical_indicators: [oil_level_pct, oil_consumption_l_wk]
+  recommended_actions: [replace_shaft_seal_kit, top_up_compressor_fluid]
+  mtbf_hours: 20000
+
+- code: CMP-AIRLEAK
+  name: Air demand above capacity (downstream leaks)
+  iso_14224_code: LOO
+  mechanism: leakage
+  category: process
+  applies_to_models: [RS-75]
+  detection_methods: [pressure_monitoring, ultrasonic_leak_survey]
+  typical_indicators: [delivery_pressure_bar, load_ratio_pct]
+  recommended_actions: [run_leak_survey, repair_downstream_leaks]
+  mtbf_hours: 6000
+
+- code: CNV-ROLLER
+  name: Conveyor roller bearing failure
+  iso_14224_code: VIB
+  mechanism: wear
+  category: mechanical
+  applies_to_models: [RC-1200]
+  detection_methods: [vibration_analysis, current_monitoring]
+  typical_indicators: [conveyor_vib_mm_s, conveyor_motor_current_a]
+  recommended_actions: [replace_roller_bearings]
+  mtbf_hours: 15000
+
+- code: CNV-MISTRACK
+  name: Belt mistracking
+  iso_14224_code: PDE
+  mechanism: misalignment
+  category: mechanical
+  applies_to_models: [RC-1200]
+  detection_methods: [belt_drift_switch]
+  typical_indicators: [belt_drift_mm]
+  recommended_actions: [adjust_tracking_idlers]
+  mtbf_hours: 5000
+
+- code: TST-SEAL
+  name: Test-stand loop pump seal leak
+  iso_14224_code: ELP
+  mechanism: wear
+  category: mechanical
+  applies_to_models: [PTS-2]
+  detection_methods: [leak_rate_monitoring]
+  typical_indicators: [loop_leak_rate_lph]
+  recommended_actions: [replace_loop_pump_mechanical_seal]
+  mtbf_hours: 9000
+
+- code: TST-FLOWMETER
+  name: Test-stand flowmeter drift
+  iso_14224_code: AIR
+  mechanism: drift
+  category: instrument
+  applies_to_models: [PTS-2]
+  detection_methods: [reference_meter_check]
+  typical_indicators: [flowmeter_deviation_pct]
+  recommended_actions: [recalibrate_flowmeter]
+  mtbf_hours: 8000

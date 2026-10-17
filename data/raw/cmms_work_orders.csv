@@ -1,0 +1,224 @@
+WONum,Equipment,WOType,Priority,Status,Reported,Completed,FailureCode,ProblemDesc,LaborHrs,PartsUsed,Technician,DowntimeHrs
+IND1-250001,CMP-01,CM,3,CLOSE,2025-01-11,2025-01-11,CMP-AIRLEAK,"Header pressure low with compressor fully loaded. Leak survey found 6 leaks, repaired.",3.7,,T-IND-03,9.5
+IND1-250002,CMP-01,PM,3,CLOSE,2025-01-16,2025-01-16,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-19,
+MTY1-250003,TST 3,PM,3,CLOSE,19/01/2025,19/01/2025,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-MTY-08,
+IND1-250004,CNC-01,PM,3,CLOSE,2025-01-20,2025-01-20,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+IND1-250005,CNC-05 ,PM,3,CLOSE,2025-01-22,2025-01-22,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+MTY1-250006,CNC-06,PM,3,CLOSE,24/01/2025,24/01/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-250007,TST-02,CM,3,CLOSE,2025-01-25,2025-01-25,TST-SEAL,Leak at loop pump seal. Replaced mechanical seal.,2.8,SP-SEAL-0350x1,T-IND-19,7.2
+IND1-250008,CNC-02,PM,3,CLOSE,2025-01-31,2025-01-31,,Spindle lube and vibration route check.,1.0,,T-IND-11,
+IND1-250009,cnc-03,PM,3,CLOSE,2025-02-02,2025-02-02,,Spindle lube and vibration route check.,1.0,,T-IND-03,
+MTY1-250010,CNV-03,CM,4,CLOSE,02/02/2025,05/02/2025,CNV-MISTRACK,Belt drifting to drive side. Adjusted tracking idlers.,0.9,,T-MTY-02,1.7
+IND1-250011,CNV-01,PM,3,CLOSE,02/03/2025,02/03/2025,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-14,
+IND1-250012,CNV-02,CM,4,CLOSE,2025-02-04,2025-02-07,CNV-ROLLER,Grinding noise at tail section. Replaced two roller bearings.,3.6,SP-BRG-0301x2,T-IND-19,10.6
+IND1-250013,CNC-02,CM,2,CLOSE,2025-02-11,2025-02-13,,"Machine stopped, reset and returned to production. Cause not recorded.",1.1,,T-IND-19,2.8
+MTY1-250014,CNC-08,PM,3,CLOSE,13/02/2025,13/02/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-250015,CNC-04,PM,3,CLOSE,02/15/2025,02/15/2025,,Spindle lube and vibration route check.,1.0,,T-IND-03,
+IND1-250016,TST-01,CM,3,CLOSE,2025-02-16,2025-02-16,TST-SEAL,Leak at loop pump seal. Replaced mechanical seal.,2.8,SP-SEAL-0350x1,T-IND-14,6.0
+IND1-250017,CNV-02,PM,3,CLOSE,2025-02-17,2025-02-17,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-14,
+IND1-250018,TST-01,PM,3,CLOSE,2025-02-23,2025-02-23,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-IND-07,
+MTY1-250019,CNC-07,PM,3,CLOSE,28/02/2025,28/02/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+IND1-250020,CNC-04,CM,3,CLOSE,2025-03-07,2025-03-08,CNC-SPIMB,"Chatter marks on impeller vanes. Toolholder out of balance, replaced holder.",1.2,,T-IND-11,2.5
+IND1-250021,CNC-01,CM,2,CLOSE,03/09/2025,2025-03-11,CNC-COOL,Low coolant pressure at the spindle nozzles. Changed both coolant filter cartridges.,0.8,SP-FLT-0310x2,T-IND-07,2.0
+MTY1-250022,CMP-03,PM,3,CLOSE,13/03/2025,13/03/2025,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-MTY-08,
+IND1-250023,CMP-02,PM,3,CLOSE,2025-03-14,2025-03-14,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-14,
+MTY1-250024,CNV-03,PM,3,CLOSE,16/03/2025,16/03/2025,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-MTY-02,
+IND1-250025,CNC-01,PM,3,CLOSE,2025-03-17,2025-03-17,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+MTY1-250026,CNC-07,CM,3,CLOSE,18/03/2025,20/03/2025,CNC-SPLUB,"Oil-air lube fault. Air in lines, bled lines and replaced cartridge.",2.4,SP-LUB-0402x1;SP-FLT-0405x1,T-MTY-05,4.4
+IND1-250027,CNC-05,PM,3,CLOSE,03/27/2025,03/27/2025,,Spindle lube and vibration route check.,1.0,,T-IND-14,
+MTY1-250028,CNC-06,PM,3,CLOSE,27/03/2025,27/03/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-02,
+MTY1-250029,CMP-03,CM,2,CLOSE,29/03/2025,30/03/2025,CMP-SHAFTSEAL,"Oil under airend coupling, level dropping. Replaced shaft seal kit, topped up fluid.",5.6,SP-SEAL-0042x1;SP-OIL-0550x1,T-MTY-08,11.6
+IND1-250030,CNC-01,CM,2,CLOSE,03/30/2025,2025-04-02,CNC-COOL,Coolant filter dP alarm. Replaced cartridges and skimmed tank.,1.4,SP-FLT-0310x2,T-IND-07,3.5
+IND1-250031,TST-02,PM,3,CLOSE,04/06/2025,04/06/2025,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-IND-19,
+IND1-250032,CNC-02,PM,3,CLOSE,2025-04-07,2025-04-07,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+IND1-250033,CNC-03,PM,3,CLOSE,2025-04-08,2025-04-08,,Spindle lube and vibration route check.,1.0,,T-IND-11,
+IND1-250034,CNC 1,CM,2,CLOSE,2025-04-10,2025-04-13,CNC-DBAR,Tool pulled out during roughing. Clamp force 13 kN. Replaced disc spring stack.,3.3,SP-SPRG-0031x1,T-IND-11,3.6
+IND1-250035,cmp-01,PM,3,CLOSE,2025-04-13,2025-04-13,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-07,
+IND1-250036,CNC-04,PM,3,CLOSE,2025-04-14,2025-04-14,,Spindle lube and vibration route check.,1.0,,T-IND-03,
+MTY1-250037,CNC-08,PM,3,CLOSE,15/04/2025,15/04/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+IND1-250038,CNC-05,CM,3,CLOSE,2025-04-16,2025-04-16,CNC-SPIMB,"Vibration high at 9000 rpm with one toolholder. Cleaned taper, rebalanced holder.",2.1,,T-IND-03,3.2
+IND1-250039,CNC-05,CM,3,CLOSE,04/18/2025,04/18/2025,CNC-SPBRG-WEAR,Spindle noisy and hot. Bearing defect on envelope check. Replaced bearing set and seal.,11.0,SP-BRG-0114x1;SP-SEAL-0207x1,T-IND-03,19.8
+MTY1-250040,CNC-08 ,CM,3,CLOSE,26/04/2025,29/04/2025,CNC-COOL,Low coolant pressure at the spindle nozzles. Changed both coolant filter cartridges.,1.3,SP-FLT-0310x2,T-MTY-02,1.7
+IND1-250041,CNV-01,PM,3,CLOSE,04/30/2025,04/30/2025,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-03,
+MTY1-250042,CNC-08,CM,3,CLOSE,04/05/2025,07/05/2025,CNC-DBAR,Tool pulled out during roughing. Clamp force 13 kN. Replaced disc spring stack.,3.8,SP-SPRG-0031x1,T-MTY-05,8.4
+MTY1-250043,CNC-07,PM,3,CLOSE,05/05/2025,05/05/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-250044,CMP-01,PM,3,CLOSE,2025-05-07,2025-05-07,,"4000-h service: fluid change, oil filter and air/oil separator element replaced.",2.5,SP-OIL-0550x1;SP-FLT-0502x1;SP-SEP-0503x1,T-IND-11,
+IND1-250045,CNV-02,PM,3,CLOSE,05/15/2025,05/15/2025,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-11,
+IND1-250046,CNC-01,PM,3,CLOSE,2025-05-17,2025-05-17,,Spindle lube and vibration route check.,1.0,,T-IND-03,
+IND1-250047,CNC-03,CM,2,CLOSE,2025-05-19,05/21/2025,CNC-SPMOT,"Spindle motor overtemp. Cooling fan seized, replaced fan.",2.5,SP-FAN-0044x1,T-IND-07,3.8
+IND1-250048,CNC-05 ,PM,3,CLOSE,2025-05-22,2025-05-22,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+MTY1-250049,CNC-06 ,PM,3,CLOSE,24/05/2025,24/05/2025,,Spindle lube and vibration route check.,,,T-MTY-05,
+IND1-250050,CNV-02,CM,4,CLOSE,05/24/2025,05/27/2025,CNV-MISTRACK,Belt drifting to drive side. Adjusted tracking idlers.,0.8,,T-IND-03,1.2
+MTY1-250051,CMP-03,PM,3,CLOSE,05/06/2025,05/06/2025,,"4000-h service: fluid change, oil filter and air/oil separator element replaced.",2.5,SP-OIL-0550x1;SP-FLT-0502x1;SP-SEP-0503x1,T-MTY-05,
+IND1-250052,CNC-02 ,PM,3,CLOSE,06/09/2025,06/09/2025,,Spindle lube and vibration route check.,1.0,,T-IND-11,
+IND1-250053,CNC-03,PM,3,CLOSE,06/09/2025,06/09/2025,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+MTY1-250054,CMP-03,CM,2,CLOSE,11/06/2025,12/06/2025,CMP-SHAFTSEAL,"Oil under airend coupling, level dropping. Replaced shaft seal kit, topped up fluid.",6.3,SP-SEAL-0042x1;SP-OIL-0550x1,T-MTY-08,8.2
+IND1-250055,TST-01,CM,3,CLOSE,2025-06-11,06/12/2025,TST-FLOWMETER,Flowmeter reads 2 percent high vs reference. Recalibrated.,2.2,,T-IND-03,2.9
+MTY1-250056,CNV-03,PM,3,CLOSE,12/06/2025,12/06/2025,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-MTY-08,
+MTY1-250057,CNC-07,CM,3,CLOSE,13/06/2025,14/06/2025,CNC-SPBRG-WEAR,Spindle noisy and hot. Bearing defect on envelope check. Replaced bearing set and seal.,13.9,SP-BRG-0116x1;SP-SEAL-0207x1,T-MTY-05,33.0
+MTY1-250058,CMP-03,PM,3,CLOSE,14/06/2025,14/06/2025,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-MTY-08,
+IND1-250059,CNC-01,CM,2,CLOSE,2025-06-14,2025-06-16,CNC-SPLUB,"Oil-air lube fault. Air in lines, bled lines and replaced cartridge.",2.3,SP-LUB-0402x1;SP-FLT-0405x1,T-IND-19,2.5
+IND1-250060,CMP-02,PM,3,CLOSE,2025-06-17,2025-06-17,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-11,
+MTY1-250061,CNC 8,PM,3,CLOSE,17/06/2025,17/06/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-250062,CNC-04,PM,3,CLOSE,2025-06-19,2025-06-19,,Spindle lube and vibration route check.,1.0,,T-IND-03,
+IND1-250063,CNV-02,CM,4,CLOSE,06/24/2025,06/27/2025,CNV-ROLLER,Grinding noise at tail section. Replaced two roller bearings.,4.2,SP-BRG-0301x2,T-IND-11,9.0
+IND1-250064,CNC-02,CM,2,CLOSE,2025-06-25,2025-06-28,CNC-SPIMB,"Chatter marks on impeller vanes. Toolholder out of balance, replaced holder.",1.6,,T-IND-19,3.7
+IND1-250065,CMP-02,PM,3,CLOSE,2025-06-26,2025-06-26,,"4000-h service: fluid change, oil filter and air/oil separator element replaced.",2.5,SP-OIL-0550x1;SP-FLT-0502x1;SP-SEP-0503x1,T-IND-19,
+IND1-250066,CMP-02,CM,3,CLOSE,07/03/2025,2025-07-05,CMP-COOLER-FOUL,"High discharge temperature trip. Cleaned cooler core, checked fan.",2.3,,T-IND-03,4.5
+MTY1-250067,CNC-07,CM,3,CLOSE,07/07/2025,09/07/2025,CNC-SPMOT,"Spindle motor overtemp. Cooling fan seized, replaced fan.",1.7,SP-FAN-0044x1,T-MTY-02,4.6
+MTY1-250068,CNC-07,PM,3,CLOSE,08/07/2025,08/07/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+IND1-250069,CMP-01,PM,3,CLOSE,07/15/2025,07/15/2025,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-19,
+IND1-250070,CNC 1,CM,2,CLOSE,07/15/2025,07/15/2025,CNC-COOL,Low coolant pressure at the spindle nozzles. Changed both coolant filter cartridges.,1.2,SP-FLT-0310x2,T-IND-11,2.0
+IND1-250071,CNC-01,PM,3,CLOSE,07/18/2025,07/18/2025,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+MTY1-250072,CMP-03,CM,2,CLOSE,24/07/2025,27/07/2025,CMP-SEP-SAT,Separator dP high and oil carryover. Replaced air/oil separator element.,,SP-SEP-0503x1,T-MTY-08,6.0
+MTY1-250073,tst-03,PM,3,CLOSE,25/07/2025,25/07/2025,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-MTY-08,
+MTY1-250074,CNC-06,PM,3,CLOSE,26/07/2025,26/07/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-02,
+IND1-250075,CNV-01,PM,3,CLOSE,2025-07-26,2025-07-26,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-11,
+IND1-250076,CNC-05,PM,3,CLOSE,07/27/2025,07/27/2025,,Spindle lube and vibration route check.,1.0,,T-IND-03,
+MTY1-250077,CNC 6,CM,2,CLOSE,29/07/2025,01/08/2025,CNC-SPIMB,"Chatter marks on impeller vanes. Toolholder out of balance, replaced holder.",1.5,,T-MTY-02,3.6
+IND1-250078,CNC-03,CM,2,CLOSE,2025-08-02,2025-08-04,CNC-DBAR,Tool pulled out during roughing. Clamp force 13 kN. Replaced disc spring stack.,,SP-SPRG-0031x1,T-IND-14,4.5
+IND1-250079,CNC-02,PM,3,CLOSE,08/06/2025,08/06/2025,,Spindle lube and vibration route check.,1.0,,T-IND-14,
+IND1-250080,CNC-03,PM,3,CLOSE,08/09/2025,08/09/2025,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+MTY1-250081,CNC-08,PM,3,CLOSE,12/08/2025,12/08/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-250082,CNV-02,PM,3,CLOSE,2025-08-17,2025-08-17,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-14,
+IND1-250083,TST-01,CM,3,CLOSE,2025-08-17,2025-08-20,TST-FLOWMETER,Flowmeter reads 2 percent high vs reference. Recalibrated.,2.5,,T-IND-19,3.2
+MTY1-250084,CNV-03,CM,4,CLOSE,19/08/2025,22/08/2025,CNV-ROLLER,Grinding noise at tail section. Replaced two roller bearings.,2.9,SP-BRG-0301x2,T-MTY-08,8.0
+IND1-250085,CNC-04,PM,3,CLOSE,2025-08-20,2025-08-20,,Spindle lube and vibration route check.,1.0,,T-IND-14,
+IND1-250086,TST-01,PM,3,CLOSE,2025-08-20,2025-08-20,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-IND-11,
+MTY1-250087,CNC-06,CM,2,CLOSE,22/08/2025,22/08/2025,CNC-SPIMB,"Vibration high at 9000 rpm with one toolholder. Cleaned taper, rebalanced holder.",1.6,,T-MTY-05,4.3
+MTY1-250088,CMP-03,PM,3,CLOSE,09/09/2025,09/09/2025,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-MTY-02,
+MTY1-250089,CNC-07,PM,3,CLOSE,11/09/2025,11/09/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+IND1-250090,CMP-01,CM,3,CLOSE,2025-09-13,2025-09-16,CMP-SEP-SAT,Separator dP high and oil carryover. Replaced air/oil separator element.,3.2,SP-SEP-0503x1,T-IND-14,9.2
+MTY1-250091,CNV-03,PM,3,CLOSE,15/09/2025,15/09/2025,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-MTY-02,
+IND1-250092,CNC-01,PM,3,CLOSE,2025-09-16,2025-09-16,,Spindle lube and vibration route check.,1.0,,T-IND-14,
+IND1-250093,cmp-02,PM,3,CLOSE,2025-09-17,2025-09-17,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-14,
+IND1-250094,CNC-04,CM,3,CLOSE,09/18/2025,09/18/2025,CNC-SPIMB,"Chatter marks on impeller vanes. Toolholder out of balance, replaced holder.",1.9,,T-IND-07,3.8
+MTY1-250095,CNC 6,CM,2,CLOSE,18/09/2025,18/09/2025,CNC-SPBRG-WEAR,Spindle vibration rising for 3 weeks. Rebuilt spindle: bearings and labyrinth seal.,12.7,SP-BRG-0116x1;SP-SEAL-0207x1,T-MTY-08,21.1
+MTY1-250096,CNC-06,PM,3,CLOSE,20/09/2025,20/09/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-02,
+IND1-250097,CNC-05,PM,3,CLOSE,2025-09-22,2025-09-22,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+IND1-250098,CNC-04,CM,3,CLOSE,2025-10-04,2025-10-07,CNC-SPIMB,"Chatter marks on impeller vanes. Toolholder out of balance, replaced holder.",1.6,,T-IND-07,1.8
+IND1-250099,CNC-02,PM,3,CLOSE,2025-10-05,2025-10-05,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+IND1-250100,TST-02,PM,3,CLOSE,10/06/2025,10/06/2025,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-IND-11,
+IND1-250101,CNC-03,PM,3,CLOSE,2025-10-07,2025-10-07,,Spindle lube and vibration route check.,1.0,,T-IND-14,
+MTY1-250102,CNC-08,PM,3,CLOSE,08/10/2025,08/10/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+IND1-250103,CMP-01,PM,3,CLOSE,2025-10-10,2025-10-10,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-03,
+IND1-250104,CMP-01,CM,3,CLOSE,2025-10-16,2025-10-19,CMP-OILFLT,Oil filter dP alarm. Replaced oil filter element.,0.5,SP-FLT-0502x1,T-IND-11,1.5
+IND1-250105,TST-02,CM,3,CLOSE,2025-10-17,2025-10-20,TST-SEAL,Leak at loop pump seal. Replaced mechanical seal.,3.9,SP-SEAL-0350x1,T-IND-03,9.8
+IND1-250106,CNC-04,PM,3,CLOSE,10/24/2025,10/24/2025,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+IND1-250107,CMP-01,CM,3,CLOSE,2025-10-25,2025-10-26,CMP-OILFLT,Oil filter dP alarm. Replaced oil filter element.,0.5,SP-FLT-0502x1,T-IND-03,0.8
+IND1-250108,cnv-01,PM,3,CLOSE,10/30/2025,10/30/2025,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-14,
+MTY1-250109,CMP-03,CM,2,CLOSE,04/11/2025,05/11/2025,CMP-COOLER-FOUL,"Discharge temp 107 C in afternoon heat. Cooler fins blocked with dust, cleaned cooler.",2.1,,T-MTY-08,5.0
+IND1-250110,CNV-02,CM,4,CLOSE,2025-11-07,2025-11-10,CNV-ROLLER,Grinding noise at tail section. Replaced two roller bearings.,3.4,SP-BRG-0301x2,T-IND-19,9.3
+IND1-250111,CMP-01,PM,3,CLOSE,2025-11-08,2025-11-08,,"4000-h service: fluid change, oil filter and air/oil separator element replaced.",2.5,SP-OIL-0550x1;SP-FLT-0502x1;SP-SEP-0503x1,T-IND-19,
+IND1-250112,CNC-05,CM,3,CLOSE,2025-11-08,2025-11-08,CNC-SPLUB,"Spindle temperature high, lube pressure low. Replaced lube cartridge and line filter.",1.9,SP-LUB-0402x1;SP-FLT-0405x1,T-IND-11,3.6
+MTY1-250113,CNC-07,PM,3,CLOSE,09/11/2025,09/11/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+IND1-250114,CNC-01,PM,3,CLOSE,11/12/2025,11/12/2025,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+IND1-250115,CMP-01 ,CM,3,CLOSE,2025-11-13,11/15/2025,CMP-INFLT-CLOG,Intake filter dP high. Replaced intake filter element.,0.5,SP-FLT-0501x1,T-IND-19,0.8
+IND1-250116,CNV-02,PM,3,CLOSE,2025-11-14,2025-11-14,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-14,
+MTY1-250117,CNC-06,CM,2,CLOSE,17/11/2025,19/11/2025,CNC-SPBRG-WEAR,Spindle noisy and hot. Bearing defect on envelope check. Replaced bearing set and seal.,13.4,SP-BRG-0116x1;SP-SEAL-0207x1,T-MTY-05,36.3
+IND1-250118,CMP-01,CM,3,CLOSE,2025-11-19,2025-11-20,CMP-SEP-SAT,Separator dP high and oil carryover. Replaced air/oil separator element.,2.7,SP-SEP-0503x1,T-IND-11,5.8
+MTY1-250119,CNC-06,PM,3,CLOSE,19/11/2025,19/11/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-250120,CNC-02,CM,2,CLOSE,2025-11-23,11/24/2025,CNC-SPBRG-WEAR,Spindle vibration rising for 3 weeks. Rebuilt spindle: bearings and labyrinth seal.,,SP-BRG-0114x1;SP-SEAL-0207x1,T-IND-03,29.3
+MTY1-250121,CMP-03,CM,2,CLOSE,26/11/2025,29/11/2025,CMP-TVALVE,"Discharge temp high but cooler clean. Thermostatic valve stuck in bypass, replaced element.",2.6,SP-VLV-0520x1,T-MTY-05,6.6
+IND1-250122,CNC-05,PM,3,CLOSE,11/27/2025,11/27/2025,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+MTY1-250123,CMP-03,CM,2,CLOSE,01/12/2025,04/12/2025,CMP-INFLT-CLOG,Intake filter dP high. Replaced intake filter element.,0.5,SP-FLT-0501x1,T-MTY-08,1.3
+IND1-250124,CNC-02,PM,3,CLOSE,2025-12-02,2025-12-02,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+IND1-250125,CNC-03,PM,3,CLOSE,2025-12-04,2025-12-04,,Spindle lube and vibration route check.,1.0,,T-IND-03,
+MTY1-250126,CMP-03,PM,3,CLOSE,07/12/2025,07/12/2025,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-MTY-08,
+MTY1-250127,CMP-03,PM,3,CLOSE,07/12/2025,07/12/2025,,"4000-h service: fluid change, oil filter and air/oil separator element replaced.",2.5,SP-OIL-0550x1;SP-FLT-0502x1;SP-SEP-0503x1,T-MTY-05,
+IND1-250128,CNV-02,CM,4,CLOSE,2025-12-07,2025-12-08,CNV-MISTRACK,Belt drifting to drive side. Adjusted tracking idlers.,1.0,,T-IND-07,1.3
+MTY1-250129,CNC-08,PM,3,CLOSE,08/12/2025,08/12/2025,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-250130,CMP-01,CM,3,CLOSE,2025-12-10,12/12/2025,CMP-COOLER-FOUL,"Discharge temp 107 C in afternoon heat. Cooler fins blocked with dust, cleaned cooler.",2.5,,T-IND-07,3.8
+MTY1-250131,CNC-07,CM,3,CLOSE,11/12/2025,11/12/2025,CNC-SPLUB,"Spindle temperature high, lube pressure low. Replaced lube cartridge and line filter.",2.7,SP-LUB-0402x1;SP-FLT-0405x1,T-MTY-05,6.7
+IND1-250132,CMP-02,PM,3,CLOSE,12/15/2025,12/15/2025,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-03,
+MTY1-250133,CNV-03,PM,3,CLOSE,19/12/2025,19/12/2025,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-MTY-08,
+IND1-250134,CNC-04,PM,3,CLOSE,2025-12-20,2025-12-20,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+MTY1-250135,CNC-07,CM,3,CLOSE,25/12/2025,27/12/2025,CNC-SPMOT,"Spindle motor overtemp. Cooling fan seized, replaced fan.",2.3,SP-FAN-0044x1,T-MTY-02,3.5
+IND1-250136,CNC-02,CM,2,CLOSE,2025-12-29,2025-12-29,CNC-SPBRG-WEAR,Spindle noisy and hot. Bearing defect on envelope check. Replaced bearing set and seal.,10.2,SP-BRG-0114x1;SP-SEAL-0207x1,T-IND-11,22.1
+IND1-250137,CMP-02,PM,3,CLOSE,12/30/2025,12/30/2025,,"4000-h service: fluid change, oil filter and air/oil separator element replaced.",2.5,SP-OIL-0550x1;SP-FLT-0502x1;SP-SEP-0503x1,T-IND-03,
+MTY1-260138,CNC-07,PM,3,CLOSE,06/01/2026,06/01/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-260139,CNC-01,PM,3,CLOSE,2026-01-10,2026-01-10,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+IND1-260140,CMP-01,PM,3,CLOSE,01/12/2026,01/12/2026,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-14,
+MTY1-260141,CNC-06,PM,3,CLOSE,22/01/2026,22/01/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+IND1-260142,CNV-01,PM,3,CLOSE,01/24/2026,01/24/2026,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",,,T-IND-03,
+MTY1-260143,TST-03,PM,3,CLOSE,28/01/2026,28/01/2026,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-MTY-02,
+IND1-260144,CNC-02,PM,3,CLOSE,01/30/2026,01/30/2026,,Spindle lube and vibration route check.,1.0,,T-IND-14,
+IND1-260145,CNC-05,PM,3,CLOSE,01/30/2026,01/30/2026,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+IND1-260146,CNC-03,PM,3,CLOSE,02/06/2026,02/06/2026,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+MTY1-260147,CNC-08,PM,3,CLOSE,06/02/2026,06/02/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+IND1-260148,CMP-02,CM,3,CLOSE,2026-02-08,2026-02-08,,"Operator reported abnormal noise. Inspected, nothing found.",1.1,,T-IND-11,1.2
+IND1-260149,CNV-02,PM,3,CLOSE,02/12/2026,02/12/2026,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-07,
+IND1-260150,TST-01,PM,3,CLOSE,2026-02-14,2026-02-14,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-IND-11,
+IND1-260151,CNC-04,PM,3,CLOSE,2026-02-20,2026-02-20,,Spindle lube and vibration route check.,1.0,,T-IND-11,
+IND1-260152,cnc-01,CM,2,CLOSE,2026-02-22,02/24/2026,CNC-SPIMB,"Vibration high at 9000 rpm with one toolholder. Cleaned taper, rebalanced holder.",1.4,,T-IND-03,4.1
+IND1-260153,CNC-02,CM,2,CLOSE,2026-02-23,2026-02-23,CNC-COOL,Low coolant pressure at the spindle nozzles. Changed both coolant filter cartridges.,1.1,SP-FLT-0310x2,T-IND-07,2.5
+MTY1-260154,CNC-07,CM,3,CLOSE,03/03/2026,04/03/2026,CNC-COOL,Coolant filter dP alarm. Replaced cartridges and skimmed tank.,,SP-FLT-0310x2,T-MTY-05,1.3
+MTY1-260155,CNC-06,CM,2,CLOSE,04/03/2026,04/03/2026,CNC-COOL,Low coolant pressure at the spindle nozzles. Changed both coolant filter cartridges.,1.2,SP-FLT-0310x2,T-MTY-02,3.2
+MTY1-260156,CMP-03,PM,3,CLOSE,06/03/2026,06/03/2026,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-MTY-02,
+MTY1-260157,CNC-07,PM,3,CLOSE,08/03/2026,08/03/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-260158,CNC 1,PM,3,CLOSE,2026-03-16,2026-03-16,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+IND1-260159,CMP-02,PM,3,CLOSE,2026-03-19,2026-03-19,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-07,
+IND1-260160,CNC-05,CM,3,CLOSE,2026-03-19,2026-03-19,,"Machine stopped, reset and returned to production. Cause not recorded.",0.8,,T-IND-07,0.8
+MTY1-260161,CNC-06,PM,3,CLOSE,21/03/2026,21/03/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+MTY1-260162,CNV 3,PM,3,CLOSE,22/03/2026,22/03/2026,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-MTY-02,
+MTY1-260163,CMP-03,CM,2,CLOSE,28/03/2026,28/03/2026,CMP-COOLER-FOUL,"Discharge temp 107 C in afternoon heat. Cooler fins blocked with dust, cleaned cooler.",2.0,,T-MTY-08,2.3
+IND1-260164,CNC-02,CM,2,CLOSE,03/30/2026,2026-04-01,CNC-SPLUB,"Spindle temperature high, lube pressure low. Replaced lube cartridge and line filter.",2.4,SP-LUB-0402x1;SP-FLT-0405x1,T-IND-19,2.9
+IND1-260165,CNC-05,PM,3,CLOSE,2026-03-31,2026-03-31,,Spindle lube and vibration route check.,1.0,,T-IND-03,
+IND1-260166,CNC-02,PM,3,CLOSE,2026-04-04,2026-04-04,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+IND1-260166,CNC-02,PM,3,CLOSE,2026-04-04,2026-04-04,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+MTY1-260167,CNC-08,PM,3,CLOSE,06/04/2026,06/04/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-02,
+MTY1-260168,cmp-03,CM,2,CLOSE,07/04/2026,08/04/2026,CMP-TVALVE,"Discharge temp high but cooler clean. Thermostatic valve stuck in bypass, replaced element.",2.1,SP-VLV-0520x1,T-MTY-05,3.9
+IND1-260169,TST-02,PM,3,CLOSE,2026-04-07,2026-04-07,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-IND-14,
+IND1-260170,CMP-01 ,PM,3,CLOSE,2026-04-10,2026-04-10,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-19,
+IND1-260171,CNC-02,CM,2,CLOSE,2026-04-10,2026-04-11,CNC-SPIMB,"Chatter marks on impeller vanes. Toolholder out of balance, replaced holder.",1.4,,T-IND-19,3.2
+IND1-260172,CNC-03,PM,3,CLOSE,2026-04-10,2026-04-10,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+IND1-260173,CMP-01,CM,3,CLOSE,04/18/2026,2026-04-19,CMP-AIRLEAK,"Header pressure low with compressor fully loaded. Leak survey found 6 leaks, repaired.",4.8,,T-IND-19,8.9
+IND1-260174,CNC-03,CM,2,CLOSE,2026-04-19,04/21/2026,CNC-SPBRG-WEAR,Spindle noisy and hot. Bearing defect on envelope check. Replaced bearing set and seal.,8.1,SP-BRG-0114x1;SP-SEAL-0207x1,T-IND-19,19.8
+IND1-260175,CNC-04,PM,3,CLOSE,2026-04-23,2026-04-23,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+IND1-260176,CNV-01,PM,3,CLOSE,2026-04-23,2026-04-23,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-14,
+IND1-260177,CMP-02,CM,3,CLOSE,2026-04-28,2026-05-01,CMP-MOTBRG,"Motor vibration 7.5 mm/s, bearing noise. Replaced motor bearings, checked alignment.",7.4,SP-BRG-0230x1,T-IND-14,12.0
+MTY1-260178,CNC-07,PM,3,CLOSE,05/05/2026,05/05/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-260179,CMP-01,PM,3,CLOSE,05/06/2026,05/06/2026,,"4000-h service: fluid change, oil filter and air/oil separator element replaced.",2.5,SP-OIL-0550x1;SP-FLT-0502x1;SP-SEP-0503x1,T-IND-03,
+IND1-260180,CNC-01,PM,3,CLOSE,2026-05-16,2026-05-16,,Spindle lube and vibration route check.,1.0,,T-IND-11,
+IND1-260181,CNC-05,CM,3,CLOSE,2026-05-19,2026-05-20,CNC-COOL,Low coolant pressure at the spindle nozzles. Changed both coolant filter cartridges.,1.0,SP-FLT-0310x2,T-IND-19,2.9
+IND1-260182,CNV-02,PM,3,CLOSE,2026-05-19,2026-05-19,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-14,
+MTY1-260183,CNC-06,PM,3,CLOSE,24/05/2026,24/05/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+MTY1-260184,CMP-03,PM,3,CLOSE,01/06/2026,01/06/2026,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-MTY-05,
+MTY1-260185,CNC-08,PM,3,CLOSE,01/06/2026,01/06/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-260186,CNC-04,CM,3,CLOSE,2026-06-04,2026-06-05,CNC-COOL,Low coolant pressure at the spindle nozzles. Changed both coolant filter cartridges.,1.4,SP-FLT-0310x2,T-IND-14,2.0
+MTY1-260187,CMP-03,PM,3,CLOSE,05/06/2026,05/06/2026,,"4000-h service: fluid change, oil filter and air/oil separator element replaced.",2.5,SP-OIL-0550x1;SP-FLT-0502x1;SP-SEP-0503x1,T-MTY-05,
+MTY1-260187,CMP-03,PM,3,CLOSE,05/06/2026,05/06/2026,,"4000-h service: fluid change, oil filter and air/oil separator element replaced.",2.5,SP-OIL-0550x1;SP-FLT-0502x1;SP-SEP-0503x1,T-MTY-05,
+IND1-260188,CNC-05,PM,3,CLOSE,2026-06-05,2026-06-05,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+IND1-260189,CNC-03,PM,3,CLOSE,06/06/2026,06/06/2026,,Spindle lube and vibration route check.,1.0,,T-IND-19,
+IND1-260190,CNC-02,PM,3,CLOSE,2026-06-07,2026-06-07,,Spindle lube and vibration route check.,1.0,,T-IND-03,
+IND1-260191,CMP-02,CM,3,CLOSE,06/09/2026,2026-06-11,CMP-COOLER-FOUL,"High discharge temperature trip. Cleaned cooler core, checked fan.",2.0,,T-IND-11,2.1
+IND1-260192,CMP-01,CM,3,CLOSE,2026-06-13,2026-06-16,CMP-INFLT-CLOG,Intake filter dP high. Replaced intake filter element.,0.6,SP-FLT-0501x1,T-IND-11,1.0
+IND1-260193,CMP-02,PM,3,CLOSE,2026-06-16,2026-06-16,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-14,
+IND1-260194,cmp-02,CM,3,CLOSE,2026-06-17,2026-06-19,CMP-INFLT-CLOG,Intake filter dP high. Replaced intake filter element.,0.6,SP-FLT-0501x1,T-IND-03,0.7
+MTY1-260195,CNV-03,PM,3,CLOSE,19/06/2026,19/06/2026,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-MTY-05,
+MTY1-260196,CMP-03,CM,2,CLOSE,20/06/2026,23/06/2026,CMP-AIRLEAK,"Header pressure low with compressor fully loaded. Leak survey found 6 leaks, repaired.",4.5,,T-MTY-08,7.4
+IND1-260197,CNC-04,PM,3,CLOSE,06/27/2026,06/27/2026,,Spindle lube and vibration route check.,1.0,,T-IND-03,
+IND1-260198,CMP-02,PM,3,CLOSE,06/30/2026,06/30/2026,,"4000-h service: fluid change, oil filter and air/oil separator element replaced.",2.5,SP-OIL-0550x1;SP-FLT-0502x1;SP-SEP-0503x1,T-IND-03,
+IND1-260199,CMP-01,PM,3,CLOSE,2026-07-07,2026-07-07,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-14,
+MTY1-260200,CNC-07,PM,3,CLOSE,08/07/2026,08/07/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-05,
+IND1-260201,CNC-01,PM,3,CLOSE,2026-07-14,2026-07-14,,Spindle lube and vibration route check.,1.0,,T-IND-11,
+IND1-260202,CNV-01,PM,3,CLOSE,2026-07-19,2026-07-19,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-IND-19,
+MTY1-260203,CNC-06,PM,3,CLOSE,20/07/2026,20/07/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-02,
+MTY1-260204,CNC-08,PM,3,CLOSE,30/07/2026,30/07/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-02,
+IND1-260205,CNC 3,PM,3,CLOSE,2026-08-01,2026-08-01,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+MTY1-260206,TST-03,PM,3,CLOSE,03/08/2026,03/08/2026,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-MTY-05,
+IND1-260207,CNC-05,PM,3,CLOSE,2026-08-05,2026-08-05,,Spindle lube and vibration route check.,,,T-IND-14,
+IND1-260208,CNC-02,PM,3,CLOSE,08/06/2026,08/06/2026,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+MTY1-260209,CMP-03,CM,2,CLOSE,11/08/2026,12/08/2026,CMP-SEP-SAT,Separator dP 1.0 bar and oil in the air lines. Replaced air/oil separator element.,3,SP-SEP-0503x1,T-MTY-05,3.4
+MTY1-260209,CMP-03,CM,2,CLOSE,11/08/2026,12/08/2026,CMP-SEP-SAT,Separator dP 1.0 bar and oil in the air lines. Replaced air/oil separator element.,3,SP-SEP-0503x1,T-MTY-05,3.4
+IND1-260210,CNV-02,PM,3,CLOSE,2026-08-20,2026-08-20,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",,,T-IND-03,
+IND1-260211,TST-01,PM,3,CLOSE,2026-08-20,2026-08-20,,Semi-annual flowmeter calibration against reference meter.,1.0,,T-IND-11,
+IND1-260212,CNC-05,CM,2,CLOSE,08/27/2026,2026-08-28,CNC-COOL,Low coolant pressure at the spindle nozzles. Changed both coolant filter cartridges.,1,SP-FLT-0310x2,T-IND-14,1.6
+IND1-260213,CNC-04,PM,3,CLOSE,2026-08-29,2026-08-29,,Spindle lube and vibration route check.,1.0,,T-IND-07,
+MTY1-260214,CMP-03,PM,3,CLOSE,31/08/2026,31/08/2026,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-MTY-08,
+MTY1-260215,CNC-07,PM,3,COMP,10/09/2026,10/09/2026,,Spindle lube and vibration route check.,1.0,,T-MTY-02,
+IND1-260216,CMP-02,PM,3,COMP,2026-09-14,2026-09-14,,"2000-h service: intake filter and oil filter replaced, cooler blown out.",2.5,SP-FLT-0501x1;SP-FLT-0502x1,T-IND-19,
+IND1-260217,CNC-01 ,PM,3,COMP,09/18/2026,09/18/2026,,Spindle lube and vibration route check.,1.0,,T-IND-11,
+MTY1-260218,CNV-03,PM,3,COMP,20/09/2026,20/09/2026,,"Quarterly conveyor inspection: belt tracking, rollers, guards.",1.0,,T-MTY-02,
+MTY1-260219,CNC-06,PM,3,INPRG,24/09/2026,,,Spindle lube and vibration route check.,1.0,,T-MTY-08,
+IND1-260220,CNC-03,PM,3,INPRG,09/27/2026,,,Spindle lube and vibration route check.,1.0,,T-IND-11,

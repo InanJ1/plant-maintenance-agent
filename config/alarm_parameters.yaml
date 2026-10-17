@@ -1,0 +1,40 @@
+# Corvane condition-monitoring parameters (synthetic limits).
+# direction: high = alarm when the value rises above the limit, low = when it falls below.
+# warn / trip: the warning and trip limits. A value past `trip` counts as critical
+# for the priority policy even when the alarm arrived as a warning.
+
+spindle_vib_overall_mm_s:  {unit: mm/s,  direction: high, warn: 4.5,  trip: 7.1}
+spindle_vib_env_g:         {unit: g,     direction: high, warn: 1.5,  trip: 2.5}
+spindle_vib_1x_mm_s:       {unit: mm/s,  direction: high, warn: 3.0,  trip: 5.0}
+spindle_bearing_temp_c:    {unit: degC,  direction: high, warn: 55,   trip: 70}
+spindle_lube_pressure_bar: {unit: bar,   direction: low,  warn: 1.8,  trip: 1.0}
+drawbar_clamp_force_kn:    {unit: kN,    direction: low,  warn: 18,   trip: 15}
+tool_unclamp_time_s:       {unit: s,     direction: high, warn: 1.2,  trip: 2.0}
+coolant_pressure_bar:      {unit: bar,   direction: low,  warn: 3.0,  trip: 2.0}
+coolant_filter_dp_bar:     {unit: bar,   direction: high, warn: 1.2,  trip: 2.0}
+spindle_motor_temp_c:      {unit: degC,  direction: high, warn: 100,  trip: 115}
+spindle_motor_current_a:   {unit: A,     direction: high, warn: 42,   trip: 50}
+
+discharge_temp_c:          {unit: degC,  direction: high, warn: 105,  trip: 110}
+cooler_approach_temp_c:    {unit: degC,  direction: high, warn: 15,   trip: 22}
+oil_injection_temp_c:      {unit: degC,  direction: high, warn: 85,   trip: 95}
+separator_dp_bar:          {unit: bar,   direction: high, warn: 0.8,  trip: 1.2}
+oil_carryover_ppm:         {unit: ppm,   direction: high, warn: 5,    trip: 10}
+inlet_filter_dp_mbar:      {unit: mbar,  direction: high, warn: 50,   trip: 75}
+delivery_flow_m3_min:      {unit: m3/min, direction: low, warn: 10.5, trip: 9.0}
+oil_filter_dp_bar:         {unit: bar,   direction: high, warn: 1.0,  trip: 1.5}
+motor_vib_mm_s:            {unit: mm/s,  direction: high, warn: 4.5,  trip: 7.1}
+motor_bearing_temp_c:      {unit: degC,  direction: high, warn: 80,   trip: 95}
+oil_level_pct:             {unit: "%",   direction: low,  warn: 50,   trip: 35}
+oil_consumption_l_wk:      {unit: l/wk,  direction: high, warn: 2.0,  trip: 5.0}
+delivery_pressure_bar:     {unit: bar,   direction: low,  warn: 6.5,  trip: 6.0}
+load_ratio_pct:            {unit: "%",   direction: high, warn: 92,   trip: 98}
+
+conveyor_vib_mm_s:         {unit: mm/s,  direction: high, warn: 6.0,  trip: 10.0}
+conveyor_motor_current_a:  {unit: A,     direction: high, warn: 18,   trip: 22}
+belt_drift_mm:             {unit: mm,    direction: high, warn: 25,   trip: 40}
+
+loop_leak_rate_lph:        {unit: l/h,   direction: high, warn: 2.0,  trip: 5.0}
+flowmeter_deviation_pct:   {unit: "%",   direction: high, warn: 1.5,  trip: 3.0}
+
+pour_temp_deviation_c:     {unit: degC,  direction: high, warn: 25,   trip: 40}

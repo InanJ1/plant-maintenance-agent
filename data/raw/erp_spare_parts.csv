@@ -1,0 +1,33 @@
+ItemNo,ItemDesc,Storeroom,OnHand,ReorderPt,LeadTimeDays,UnitCost,Currency,BinLoc,Supplier,FitsModels
+SP-BRG-0114,"Spindle bearing set, matched pair, VX-640",IND1-STORES,2,1,21,1850.0,USD,A1-1,Brightline Bearings,VX-640
+SP-BRG-0116,"Spindle bearing set, matched pair, HX-500",MTY1-STORES,0,1,35,40320.0,MXN,A2-2,Brightline Bearing Co,HX-500
+SP-SEAL-0207,Spindle labyrinth seal kit,IND1-STORES,5,2,10,145.0,USD,B3-3,Pellum Seal Co.,VX-640;HX-500
+SP-SEAL-0207,Spindle labyrinth seal kit,MTY1-STORES,1,1,17,2610.0,MXN,B4-4,Pellum Seals,VX-640;HX-500
+SP-LUB-0402,Spindle oil-air lube cartridge,IND1-STORES,6,2,7,62.0,USD,B5-5,Keystone MRO Supply,VX-640;HX-500
+SP-LUB-0402,Spindle oil-air lube cartridge,MTY1-STORES,3,1,14,1116.0,MXN,B6-1,Keystone MRO,VX-640;HX-500
+SP-FLT-0405,Lube line filter element,IND1-STORES,4,2,7,18.5,USD,B7-2,Keystone MRO Supply,VX-640;HX-500
+SP-FLT-0405,Lube line filter element,MTY1-STORES,0,1,14,333.0,MXN,B8-3,Keystone MRO,VX-640;HX-500
+SP-SPRG-0031,Drawbar disc spring stack,IND1-STORES,1,1,30,410.0,USD,B9-4,Varnell Machine Works,VX-640;HX-500
+SP-SPRG-0031,Drawbar disc spring stack,MTY1-STORES,2,1,37,7380.0,MXN,B1-5,varnell machine works,VX-640;HX-500
+SP-FLT-0310,Coolant filter cartridge 25 micron,IND1-STORES,12,6,5,34.0,USD,B2-1,Keystone MRO Supply,VX-640;HX-500
+SP-FLT-0310,Coolant filter cartridge 25 micron,MTY1-STORES,8,4,12,612.0,MXN,B3-2,Keystone MRO,VX-640;HX-500
+SP-FAN-0044,Spindle motor cooling fan,IND1-STORES,1,1,18,275.0,USD,B4-3,Ostrava Motor Works,VX-640;HX-500
+SP-FAN-0044,Spindle motor cooling fan,MTY1-STORES,0,1,25,4950.0,MXN,B5-4,Ostrava Motor Works,VX-640;HX-500
+SP-FLT-0501,Compressor intake filter element,IND1-STORES,4,2,6,96.0,USD,B6-5,Tolland Air Systems,RS-75
+SP-FLT-0501,Compressor intake filter element,MTY1-STORES,2,1,13,1728.0,MXN,B7-1,Tolland Air Systems,RS-75
+SP-FLT-0502,Compressor oil filter element,IND1-STORES,3,2,6,54.0,USD,B8-2,Tolland Air Systems,RS-75
+SP-FLT-0502,Compressor oil filter element,MTY1-STORES,2,1,13,972.0,MXN,B9-3,Tolland Air Systems,RS-75
+SP-SEP-0503,Air/oil separator element,IND1-STORES,1,1,21,388.0,USD,B1-4,Tolland Air Systems,RS-75
+SP-SEP-0503,Air/oil separator element,MTY1-STORES,0,1,28,6984.0,MXN,B2-5,Tolland Air Systems,RS-75
+SP-VLV-0520,Thermostatic valve element kit,IND1-STORES,1,1,14,165.0,USD,B3-1,Tolland Air Systems,RS-75
+SP-VLV-0520,Thermostatic valve element kit,MTY1-STORES,1,1,21,2970.0,MXN,B4-2,Tolland Air Systems,RS-75
+SP-SEAL-0042,Airend shaft seal kit,IND1-STORES,2,1,12,520.0,USD,B5-3,Pellum Seal Co.,RS-75
+SP-SEAL-0042,Airend shaft seal kit,MTY1-STORES,1,1,19,9360.0,MXN,B6-4,Pellum Seal Co,RS-75
+SP-BRG-0230,Drive motor bearing set 6316/6314,IND1-STORES,2,1,9,310.0,USD,A7-5,Brightline Bearings,RS-75
+SP-BRG-0230,Drive motor bearing set 6316/6314,MTY1-STORES,1,1,16,5580.0,MXN,A8-1,Brightline Bearings,RS-75
+SP-OIL-0550,"Compressor fluid, 20 l pail",IND1-STORES,6,3,4,210.0,USD,B9-2,Keystone MRO Supply,RS-75
+SP-OIL-0550,"Compressor fluid, 20 l pail",MTY1-STORES,4,2,11,3780.0,MXN,B1-3,Keystone MRO,RS-75
+SP-BRG-0301,Conveyor roller bearing 6205,IND1-STORES,10,4,5,14.0,USD,A2-4,Brightline Bearings,RC-1200
+SP-BRG-0301,Conveyor roller bearing 6205,MTY1-STORES,6,4,12,252.0,MXN,A3-5,Brightline Brgs,RC-1200
+SP-SEAL-0350,Test-loop pump mechanical seal 35 mm,IND1-STORES,2,1,10,230.0,USD,B4-1,Pellum Seal Co.,PTS-2
+SP-SEAL-0350,Test-loop pump mechanical seal 35 mm,MTY1-STORES,1,1,17,4140.0,MXN,B5-2,Pellum Seals,PTS-2

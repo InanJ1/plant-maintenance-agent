@@ -1,0 +1,11 @@
+Corvane plant-maintenance agent
+Copyright 2026 Inan Jaggi
+
+This project depends on machina (machina-ai 0.4.0 on PyPI),
+https://github.com/LGDiMaggio/machina, Copyright Luigi Di Maggio,
+licensed under the Apache License, Version 2.0 (see LICENSE).
+
+machina is used unmodified as a pinned dependency. No machina source files are
+copied into this repository and no machina files were modified. Two classes in
+corvane_pm/ subclass machina classes (LLMProvider, DocumentStoreConnector) and
+one overrides an internal hook (_load_embedding_function); see README.md.

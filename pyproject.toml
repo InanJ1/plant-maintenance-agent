@@ -1,0 +1,25 @@
+[project]
+name = "corvane-plant-maintenance-agent"
+version = "0.1.0"
+description = "Corvane Industrial deployment of the machina maintenance-agent framework"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+dependencies = [
+    # Upstream framework, pinned. [docs-rag] is replaced by the three packages
+    # below: its langchain-huggingface member is only needed for HuggingFace
+    # embedder names, and this deployment embeds through Ollama instead.
+    "machina-ai[litellm,docs-rag-hybrid,excel,examples]==0.4.0",
+    "langchain-community==0.4.2",
+    "langchain-chroma==1.1.0",
+    "chromadb==1.5.9",
+]
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "pytest-asyncio==1.4.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+asyncio_mode = "auto"
+addopts = "-q -p no:cacheprovider"
+filterwarnings = ["ignore::DeprecationWarning"]

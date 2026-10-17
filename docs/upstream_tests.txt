@@ -1,0 +1,10 @@
+# Upstream machina test subset, run against the installed PyPI wheel machina-ai==0.4.0
+# cwd: fde-projects/_upstream/machina (git tag v0.4.0, bac3027); installed wheel == tag src (diff -rq --strip-trailing-cr: no differences)
+# command: ../../plant-maintenance-agent/.venv/Scripts/python.exe -m pytest tests/unit/domain tests/unit/test_services.py tests/unit/test_workflow_engine.py tests/unit/test_workflows.py tests/unit/test_alarm_to_workorder.py tests/unit/test_generic_cmms.py tests/unit/test_sandbox_aware.py tests/unit/test_sandbox_enforcement_writes.py tests/unit/test_llm_provider.py -o addopts= -q -p no:cacheprovider -W ignore::DeprecationWarning
+........................................................................ [ 17%]
+........................................................................ [ 34%]
+........................................................................ [ 51%]
+........................................................................ [ 68%]
+........................................................................ [ 85%]
+..............................................................           [100%]
+422 passed in 44.18s
