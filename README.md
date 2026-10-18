@@ -15,15 +15,13 @@ sets a priority and writes the work order by hand.
 
 | What | Result | Source |
 | --- | --- | --- |
-| Upstream tests (installed wheel) | 422 passed | `docs/upstream_tests.txt` |
-| Upstream alarm example | SUCCESS, 6 steps, writes sandboxed | `docs/upstream_alarm_example.txt` |
 | Failure mode correct, 20 alarms | 17/20 (built-in workflow: 14/20) | `docs/eval_results.md` |
 | Priority correct | 20/20 (built-in: 6/20, always "medium") | `docs/eval_results.md` |
 | Required parts correct (SKU and qty) | 18/20 (built-in: 4/20, puts no parts on the WO) | `docs/eval_results.md` |
 | All three correct | 17/20 (built-in: 0/20) | `docs/eval_results.md` |
 | Workflow time per alarm | 24 to 94 ms, no LLM call | `docs/alarm_demo.txt` |
 | Technician Q&A, qwen2.5:3b on CPU | 0/4 answers fully correct, 1 partly correct, no citations; 158 to 560 s per question | `docs/qa_transcripts.md` |
-| My tests | 28 passed | `python -m pytest` |
+| Tests | 28 passed | `python -m pytest` |
 
 The eval numbers come from `python scripts/run_eval.py`. The labels and the rules were written
 by the same person (me), so 20/20 on priority shows the policy is wired correctly, not that the
@@ -77,7 +75,7 @@ emoji that the cp1252 console cannot print.
    CMMS data and seven synthetic manuals and SOPs, with Chroma plus BM25 retrieval. Embeddings
    use `nomic-embed-text` on the shared Ollama, and answers use `qwen2.5:3b`.
 
-## What's upstream and what I built
+## Built on
 
 Upstream (machina-ai 0.4.0, unmodified): domain model, `FailureAnalyzer`, `WorkOrderFactory`,
 `WorkflowEngine` and sandbox gating, `GenericCmmsConnector`, `DocumentStoreConnector` (chunking,
