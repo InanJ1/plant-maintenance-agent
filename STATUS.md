@@ -1,7 +1,7 @@
 # STATUS: plant-maintenance-agent (Corvane on machina-ai 0.4.0)
 
 ## Progress (for resume)
-- All stages done except where noted under Open issues. Commits: 770bf0a, 2e8cf7b, 291a35a (+ Q&A commit).
+- All stages done. Q&A recorded with qwen2.5:3b (weak results, see docs/qa_transcripts.md). Local commits only.
 
 ## Stages
 | Stage | Status | Evidence |
@@ -39,7 +39,7 @@ $env:PYTHONUTF8=1
 - Alarm to drafted work order in 24 to 94 ms with no LLM call, nothing written without planner approval, writes sandboxed. Source: `docs/alarm_demo.txt`.
 - Data adapter on messy exports: 223 work-order rows to 220 (3 duplicates dropped), 25 equipment IDs and 122 dates normalized, 16 MXN costs converted, 10 supplier typos fixed. Source: `docs/data_load_report.txt`, `python scripts/build_cmms.py`.
 - Upstream proof: 422 upstream tests passed. Source: `docs/upstream_tests.txt`.
-- Technician Q&A (qwen2.5:3b, CPU): QA_RESULT. Source: `docs/qa_transcripts.md`, `python scripts/run_qa.py`.
+- Technician Q&A (qwen2.5:3b, CPU): 0/4 answers fully correct, 1 partly correct, no citations; 158 to 560 s per question. Source: `docs/qa_transcripts.md`, `python scripts/run_qa.py`.
 
 ## Open issues and blockers
 - Q&A latency: on the shared CPU Ollama, qwen2.5:7b did not finish one question in 900 s (index build itself took 80 s), so the recorded run uses qwen2.5:3b with 4 questions.
@@ -47,3 +47,4 @@ $env:PYTHONUTF8=1
 - On a Windows console, machina's notification step fails with UnicodeEncodeError unless `PYTHONUTF8=1` is set (emoji in the log line).
 - `[docs-rag]` extra installed as its parts minus `langchain-huggingface` (avoids torch); `corvane_pm/docs.py` overrides an internal machina hook, which is OK while machina stays pinned at 0.4.0.
 - No UI or server deployed (machina's MCP server not used), so no screenshot.
+- Q&A quality: with qwen2.5:3b, 0 of 4 answers fully correct (wrong procedure, wrong limit, no answer, off-topic answer) and no citations; my per-question assessment is at the end of `docs/qa_transcripts.md`. Retrieval works; the small model does not follow machina's tool and citation contract. Retest with qwen2.5:7b on an unshared server.

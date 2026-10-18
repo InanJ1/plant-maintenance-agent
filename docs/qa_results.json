@@ -1,0 +1,66 @@
+{
+  "meta": {
+    "model": "qwen2.5:3b",
+    "embed_model": "nomic-embed-text",
+    "base_url": "http://localhost:11434/v1",
+    "startup_s": 30.2,
+    "docs_index": {
+      "mode": "rag",
+      "chunk_count": 30
+    }
+  },
+  "results": [
+    {
+      "n": 1,
+      "question": "CNC-04 has a spindle vibration alarm. What is the bearing replacement procedure and which parts do I need?",
+      "answer": "Based on the maintenance SOPs provided, here are the relevant procedures and steps for the maintenance tasks you need to perform:\n\n### 1. **Disc Spring Stack Replacement**\n   - **Part:** SP-SPRG-0031. Time: 4 hours. Skills: spindle rebuild.\n   - **Steps:**\n     - Use the drawbar press fixture (F-31) to preload the spring stack.\n     - Stack the new springs in the same orientation as the old ones (alternating pairs).\n     - After assembly, verify clamp force with the gauge before releasing the machine.\n\n### 2. **Lockout/Tagout (LOTO)**\n   - **SOP:** Synthetic Corvane document. Applies to all maintenance work at IND1 and MTY1.\n   - **General Rules:**\n     - Every technician working on the machine puts on a personal lock. One lock per person.\n     - Verify zero energy before starting work: try to start the machine from its controls.\n     - Hot surfaces: wait until surfaces are below 50 \\u00b0C or wear heat-rated gloves.\n\n### 3. **Coolant Filter Change**\n   - **Part:** SP-FLT-0310, 25 micron. Time: one hour.\n   - **Steps:**\n     - Change both cartridges when filter differential pressure reaches 1.2 bar, or when coolant pressure at the spindle drops below 3.0 bar.\n     - Skim tramp oil from the tank at the same time.\n     - If coolant pressure is low within 90 days of a filter change, log it on the work order so the planner can schedule a full flush.\n\n### 4. **Drawbar Clamp Force Check**\n   - **Nominal Clamp Force:** 20 kN (VX-640) and 32 kN (HX-500).\n   - **Steps:**",
+      "error": null,
+      "citations": [],
+      "latency_s": 559.9,
+      "llm_calls": 2,
+      "prompt_tokens": 5882,
+      "completion_tokens": 433,
+      "is_fallback": false,
+      "completeness": "complete"
+    },
+    {
+      "n": 2,
+      "question": "What are the discharge temperature limits on CMP-03, and what should I check first when it runs hot?",
+      "answer": "CMP-03, being a rotating equipment, has a discharge temperature limit of 120\u00b0C. When the discharge temperature is high, the first step should be to check the cooler approach temperature. If the cooler approach temperature is normal, the thermostatic valve might be stuck in bypass. In this case, you should replace the thermostatic valve element (SKU: SP-VLV-0520) and ensure that the oil injection temperature settles at 70 to 80\u00b0C.\n\nLet's check the cooler approach temperature and the oil injection temperature using the controller. If the cooler approach temperature is normal but the oil injection temperature is above 85\u00b0C, the thermostatic valve is likely stuck in bypass. In this scenario, you should replace the thermostatic valve element (SKU: SP-VLV-0520) and verify the oil injection temperature.\n\nWould you like to proceed with these checks now?",
+      "error": null,
+      "citations": [],
+      "latency_s": 177.4,
+      "llm_calls": 1,
+      "prompt_tokens": 3769,
+      "completion_tokens": 192,
+      "is_fallback": false,
+      "completeness": "complete"
+    },
+    {
+      "n": 3,
+      "question": "When was the air/oil separator element last replaced on CMP-01?",
+      "answer": "To find out when the air/oil separator element was last replaced on CMP-01, I will need to search through the maintenance history for this specific asset. Let's proceed with fetching the maintenance history for CMP-01.",
+      "error": null,
+      "citations": [],
+      "latency_s": 157.7,
+      "llm_calls": 1,
+      "prompt_tokens": 3724,
+      "completion_tokens": 73,
+      "is_fallback": false,
+      "completeness": "complete"
+    },
+    {
+      "n": 4,
+      "question": "What is the warranty period for the spindle on CNC-06?",
+      "answer": "Based on the diagnostic results, the CNC-01 spindle casings (VMC 01 - CP-400 casings) is experiencing high vibration and a bearing temperature above 55\u00b0C. The probable failure modes are:\n\n1. **Spindle lubrication starvation (CNC-SPLUB)**: This mode has a confidence of 0.5, which means the symptoms match this failure mode to some extent. The recommended actions are to replace the lube cartridge, lube line filter, and bleed the oil-air lines.\n\n2. **Spindle bearing wear (CNC-SPBRG-WEAR)**: This mode has a confidence of 0.33, indicating a lower likelihood but still a possible cause. The recommended actions are to replace the spindle bearing set, labyrinth seal, and run-in the spindle.\n\nGiven the high confidence of the spindle bearing wear, it would be advisable to replace the spindle bearing set and labyrinth seal, and run-in the spindle to ensure proper operation. If the issue persists, further investigation into the lubrication system might be necessary.\n\nWould you like to proceed with creating a work order for these recommended actions?",
+      "error": null,
+      "citations": [],
+      "latency_s": 323.5,
+      "llm_calls": 3,
+      "prompt_tokens": 9979,
+      "completion_tokens": 379,
+      "is_fallback": false,
+      "completeness": "complete"
+    }
+  ]
+}

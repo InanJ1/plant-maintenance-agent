@@ -22,7 +22,7 @@ sets a priority and writes the work order by hand.
 | Required parts correct (SKU and qty) | 18/20 (built-in: 4/20, puts no parts on the WO) | `docs/eval_results.md` |
 | All three correct | 17/20 (built-in: 0/20) | `docs/eval_results.md` |
 | Workflow time per alarm | 24 to 94 ms, no LLM call | `docs/alarm_demo.txt` |
-| Technician Q&A, qwen2.5:3b on CPU | QA_RESULT | `docs/qa_transcripts.md` |
+| Technician Q&A, qwen2.5:3b on CPU | 0/4 answers fully correct, 1 partly correct, no citations; 158 to 560 s per question | `docs/qa_transcripts.md` |
 | My tests | 28 passed | `python -m pytest` |
 
 The eval numbers come from `python scripts/run_eval.py`. The labels and the rules were written
