@@ -1,5 +1,7 @@
 # Corvane plant-maintenance agent (on machina)
 
+[![tests](https://github.com/InanJaggi/plant-maintenance-agent/actions/workflows/tests.yml/badge.svg)](https://github.com/InanJaggi/plant-maintenance-agent/actions/workflows/tests.yml)
+
 I deployed [machina](https://github.com/LGDiMaggio/machina), an open-source Python framework
 for industrial-maintenance AI agents, for Corvane Industrial, a fictional pump and gearbox
 maker with plants in Indianapolis (IND1) and Monterrey (MTY1). machina is a pinned dependency
